@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex 101</title>
+</head>
+<body>
+    <h1>Welcome to the clone of regex101</h1>
+
+    <form action ='' method = 'POST'>
+        <label>Enter the text</label>
+        <input type="text" name="input_1" value="{{input_1}}" placeholder="String">
+    <br><br>
+        <label>Enter the string which needs to be found in the text</label>
+        <input type="text" name="input_2" value="{{input_2}}" placeholder="Sub-String">
+    <br><br>
+        <button type="submit">SUBMIT</button>
+    <br><br>
+    </form>
+        {% if count>0 %}
+        <p>
+        The substring is present in the string <br><br>
+        The substring appears in the string for {{count}} times
+        The indexes where substring lies in the string are {{ lst1 }} <br>
+        {% else %}
+        The substring is not present in the string
+        {% endif %}
+        </p>    
+    
+</body>
+</html>
